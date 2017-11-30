@@ -1,0 +1,323 @@
+/* apply a natural box layout model to all elements */
+/*colors
+blue: 2977C1
+red: A72201
+orange: D78F05
+green: 499605
+*/
+
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1{
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+}
+h2,h3,h4,h5 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.container {
+  max-width: 1100px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+}
+
+img {
+  width: 100%;
+}
+
+body{
+  background: url('../images/wood_pattern/wood_pattern.png');
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Utilities */
+
+/* NOTE - clip-path won't validate */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+/*nav*/
+
+nav {
+  margin: 0;
+
+}
+
+nav h1{
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.icons{
+  display: none;
+}
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav a:hover, a:active {
+  color: #7D4400;
+}
+
+/*header*/
+
+header .container {
+  background-color: #D78F05;
+}
+
+/*highligts*/
+
+.highlights .container {
+  background-color: #499605;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.highlights section {
+  background-color: white;
+  padding: 15px 30px;
+  margin: 2.0em 15px 1.0em;
+  flex: 1 0 250px;
+  position: relative;
+  border-radius: 2%;
+  border: 4px solid black;
+}
+
+/*Icelandic Sheepdogs*/
+
+.Icies .container {
+  background-color: #2977C1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+}
+
+.Icies section{
+  height: 325px;
+  width: 500px;
+}
+.Elva-Laki{
+height: 250px;
+width: 250px;
+border-radius: 50%;
+background: url('../images/Elva_Laki.jpg') no-repeat center center;
+background-size: cover;
+border: 4px solid black;
+}
+
+
+
+
+/*Icelandic Sheep*/
+
+.Sheep .container {
+  background-color: #A72201;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+
+}
+
+
+.circle-sheep{
+  height: 250px;
+width: 250px;
+border-radius: 50%;
+background: url('../images/sheep1.jpg') no-repeat right center;
+background-size: cover;
+border: 4px solid black;
+}
+
+/*Contact us*/
+
+.Contact .container {
+  background-color: #7D4400;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+}
+
+.Contact section{
+  display: flex;
+  flex-direction: row wrap;
+
+
+}
+
+.circle-dogs{
+  height: 250px;
+width: 250px;
+border-radius: 50%;
+background: url('../images/three-dogs.jpg') no-repeat center center;
+background-size: cover;
+border: 4px solid black;
+}
+
+/*Footer */
+
+footer .container2 {
+  height: 50px;}
+
+/*RWD Test*/
+
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 20px;
+  background-color: red;
+}
+
+/* MEDIA QUERIES */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  #rwd {
+    background-color: orange;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  #rwd {
+    background-color: green;
+  }
+  .Sheep section{
+    height: 300px;
+    width: 470px;
+  }
+  .icons{
+    display: inline-block;
+    position: initial;
+    top: -80px;
+    right: 70px;
+  }
+  i{
+    color: #A72201;
+    text-decoration: none;
+    padding-left: 8px;
+  }
+  i:hover, i:active{
+    color: #7D4400;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  #rwd {
+    background-color: blue;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  #rwd {
+    background-color: purple;
+  }
+}
