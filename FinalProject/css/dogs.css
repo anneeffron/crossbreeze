@@ -1,0 +1,63 @@
+.Dogs .container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Dogs section{
+  height: 325px;
+  width: 500px;
+}
+.Laki{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Laki.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.Vera{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Vera.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.Elva{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Elva.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.Calvin{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Calvin.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.Fluga{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Fluga.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.Enja{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url('../images/Enja.jpg') no-repeat center center;
+  background-size: cover;
+  border: 4px solid black;
+}
